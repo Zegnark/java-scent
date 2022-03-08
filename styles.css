@@ -409,11 +409,106 @@ section {
 
 .contact .row {
     display: flex;
-    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
+.contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
 
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
 
+.contact .row form h3 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.contact .row form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--bg);
+    border: var(--border);
+}
+
+.contact .row form .inputBox span {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+}
+
+.blog .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.blog .box-container .bo {
+    border: var(--border);
+}
+
+.blog .box-container .bo .image {
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.blog .box-container .bo .image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.blog .box-container .bo:hover .image img {
+    transform: scale(1.2);
+}
+
+.blog .box-container .bo .content {
+    padding: 2rem;
+}
+
+.blog .box-container .bo .content .title {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.blog .box-container .bo .content .title:hover {
+    color: var(--main-color);
+}
+
+.blog .box-container .bo .content span {
+    color: var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.blog .box-container .bo .content p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 1rem 0;
+}
 
 /* media queries */
 
